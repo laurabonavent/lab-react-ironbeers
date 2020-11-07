@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import Navbar from "./Navbar"
 
 class SingleBeer extends Component {
 
@@ -26,6 +27,7 @@ class SingleBeer extends Component {
     render() {
         return (
             <div>
+                <Navbar/>
                 <img src={this.state.image_url} alt=""/>
                 <h1>{this.state.name}</h1>
                 <p>{this.state.attenuation_level}</p>
