@@ -25,18 +25,13 @@ class Beers extends Component {
                 {this.state.beers.map( beer => {
                     return (
                         <BeerBox
-                            id={beer._id}
+                            beerId={beer._id}
                             key={beer._id}
                             image_url={beer.image_url}
                             name={beer.name}
                             tagline={beer.tagline}/>
-                        
                     )
                 })}
-
-                <BeerBox
-
-                />
             </div>
         );
     }
